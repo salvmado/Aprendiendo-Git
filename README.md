@@ -2,7 +2,7 @@
 
 ---
 
-## Instalación de git en Debian.
+## Instalación de git en debian.
 ```sh
 :~# apt install git
 ```
@@ -19,7 +19,7 @@ git
 
 ---
 
-## Comandos de Git.
+## Comandos de git.
 
 **Comenzar un repositorio.**
 ```sh
@@ -126,7 +126,7 @@ git pull
 
 ---
 
-## Cómo clonar un repositorio de Github a local.
+## Cómo clonar un repositorio de github.
 
 **En Github**
 
@@ -140,7 +140,7 @@ git pull
 
 - Hacer cambios `git add .` --> `git commit -m "mensaje"`
 
-- Y `git push` para subir los cambios hechos.
+- Y `git push` para subir cambios hechos.
 
 ---
 
