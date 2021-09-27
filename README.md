@@ -44,7 +44,7 @@ git config --list
 git config --list --show-origin
 ```
 
-**Comandos de configuraciones.**
+**Comandos para configuraciones.**
 ```sh
 git config
 ```
