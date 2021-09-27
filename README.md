@@ -57,6 +57,12 @@ git add archivo.txt
 git add .
 ```
 
+**Cambia el estatus de agregado a cacheado, vuelve al estado inicial.**
+```sh
+git rm --cached archivo.txt
+```
+--cached significa que está en la memoria ram.
+
 **Envía los cambios del archivo a la base de datos del control de versiones.**
 ```sh
 git commit -m "Versión 1"
@@ -77,12 +83,6 @@ git show
 git log archivo.txt
 ```
 El número largo que aparece es el nombre de esa modificación.
-
-**Cambia el estatus de agregado a cacheado, vuelve al estado inicial.**
-```sh
-git rm --cached archivo.txt
-```
---cached significa que está en la memoria ram.
 
 **Llevar el archivo a un servidor remoto, por ejemplo a github.**
 ```sh
@@ -130,4 +130,4 @@ git pull
 
 - Hacer cambios `git add .` --> `git commit -m "mensaje"`
 
-- `git push` para subir los cambios hechos.
+- Y `git push` para subir los cambios hechos.
