@@ -85,10 +85,11 @@ git show
 ```
 
 **Muestra toda la historia de un archivo.**
+
+El número largo que aparece es el nombre de esa modificación.
 ```sh
 git log archivo.txt
 ```
-El número largo que aparece es el nombre de esa modificación.
 
 **Guardar una actualización en el servidor remoto, por ejemplo en github.**
 ```sh
@@ -98,7 +99,7 @@ git push
 **Traer archivo de un servidor remoto.**
 
 Por ejemplo: si alguién más hizo una actualización, entonces yo la puedo traer a mi computadora con este comando, 
-o si yo hago una actualización directo en github, también actualizo mi archivo local con este comando:
+o si yo hago una actualización directa en github, también actualizo mi archivo local con este comando:
 ```sh
 git pull
 ```
