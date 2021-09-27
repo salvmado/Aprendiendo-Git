@@ -51,7 +51,7 @@ git config
 
 **Poner archivos en Stage.** 
 
-Es como agregar archivos y prepararlos para hacer el `commit`
+Es como agregar archivos y prepararlos para después hacer `commit`
 ```sh
 git add archivo.txt
 ```
