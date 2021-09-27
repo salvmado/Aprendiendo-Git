@@ -55,7 +55,7 @@ Es como agregar archivos y prepararlos para después hacer `commit`.
 ```sh
 git add archivo.txt
 ```
-o para agregar varios archivos al mismo tiempo..
+o para agregar varios archivos al mismo tiempo.
 ```sh
 git add .
 ```
