@@ -7,10 +7,12 @@
 :~# apt install git
 ```
 
+
 **Para saber que versión que tengo instalada.**
 ```sh
 git --version
 ```
+
 
 **Para ver todos los comandos de git.**
 ```sh
@@ -98,7 +100,7 @@ git push
 
 **Traer archivo de un servidor remoto.**
 
-Por ejemplo: si alguién más hizo una actualización, entonces yo la puedo traer a mi computadora con este comando, 
+Por ejemplo: si alguién más hizo una actualización, entonces yo la puedo traer a mi computadora 
 o si yo hago una actualización directa en github, también actualizo mi archivo local con este comando:
 ```sh
 git pull
@@ -141,3 +143,6 @@ git pull
 - Hacer cambios `git add .` --> `git commit -m "mensaje"`
 
 - Y `git push` para subir los cambios hechos.
+
+---
+
