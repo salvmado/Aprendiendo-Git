@@ -68,6 +68,8 @@ git rm --cached archivo.txt
 ```
 
 **Envía los cambios del archivo a la base de datos del control de versiones.**
+
+El mensaje entre comillas es para darnos una pista del cambio que se hizo.
 ```sh
 git commit -m "Versión 1"
 ```
