@@ -50,6 +50,7 @@ git config
 ```
 
 **Poner archivos en Stage.** 
+Es como agregar los archivos, prepararlos pra hacer el `commit`
 ```sh
 git add archivo.txt
 ```
@@ -58,10 +59,10 @@ git add .
 ```
 
 **Cambia el estatus de agregado a cacheado, vuelve al estado inicial.**
+--cached significa que está en la memoria ram.
 ```sh
 git rm --cached archivo.txt
 ```
---cached significa que está en la memoria ram.
 
 **Envía los cambios del archivo a la base de datos del control de versiones.**
 ```sh
