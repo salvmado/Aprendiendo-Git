@@ -59,7 +59,7 @@ git add .
 ```
 
 **Cambia el estatus de agregado a cacheado, vuelve al estado inicial.**
---cached significa que está en la memoria ram.
+--cached significa que está en la memoria ram. Si me equivoco al hacer `add` me puedo regresar.
 ```sh
 git rm --cached archivo.txt
 ```
