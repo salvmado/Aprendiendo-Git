@@ -7,12 +7,10 @@
 :~# apt install git
 ```
 
-
 **Para saber que versión que tengo instalada.**
 ```sh
 git --version
 ```
-
 
 **Para ver todos los comandos de git.**
 ```sh
@@ -108,7 +106,7 @@ git pull
 
 --- 
 
-## Pasos para subir un proyecto local a github.
+##  Cómo subir un proyecto local a github.
 
 **En Github**
 
@@ -128,7 +126,7 @@ git pull
 
 ---
 
-## Pasos para clonar un repositorio de Github a local.
+## Cómo clonar un repositorio de Github a local.
 
 **En Github**
 
