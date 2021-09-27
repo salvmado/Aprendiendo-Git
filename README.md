@@ -7,7 +7,7 @@
 :~# apt install git
 ```
 
-**Para saber que versión que tengo instalada.**
+**Para saber la versión que tengo instalada.**
 ```sh
 git --version
 ```
