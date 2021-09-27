@@ -4,7 +4,7 @@
 
 ## Instalación de git en Debian.
 ```sh
-:~# apt-get install git
+:~# apt install git
 ```
 
 **Para saber que versión que tengo instalada.**
