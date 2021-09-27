@@ -102,7 +102,7 @@ git pull
 
 - Tener asociada mi key SSH publica.
 
-- Crear un repositorio con: nombre, descripción, público o privado y dejar el check de crear README sin marcar.
+- Crear un repositorio.
 
 **En mi máquina local.**
 
@@ -113,3 +113,21 @@ git pull
 - `git push -u origin master` o como se llame la rama.
 
 - Para subir los próximos cambios solo será hacer `git push`
+
+---
+
+## Pasos para clonar un repositorio de Github a local.
+
+**En Github**
+
+- Tener asociada mi key SSH publica.
+
+- Crear un repositorio.
+
+**En mi máquina local**
+
+- `git clone git@github.com:nombre-usuario/nombre-de-proyecto.git`
+
+- Hacer cambios `git add .` --> `git commit -m "mensaje"`
+
+- `git push` para subir los cambios hechos.
