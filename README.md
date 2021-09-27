@@ -90,7 +90,7 @@ git log archivo.txt
 ```
 El número largo que aparece es el nombre de esa modificación.
 
-**Llevar el archivo a un servidor remoto, por ejemplo a github.**
+**Guardar una actualización en el servidor remoto, por ejemplo en github.**
 ```sh
 git push
 ```
