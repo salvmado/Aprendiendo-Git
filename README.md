@@ -23,7 +23,7 @@ git
 
 <br/>  
 
-___
+---
 
 <br/>
 
@@ -36,7 +36,7 @@ git init
 
 <br/>  
 
-___
+---
 
 <br/>
 
@@ -50,16 +50,14 @@ git config --global user.name "Mi Nombre"
 git config --global user.email "micorreo@mail.com.mx"
 ```    
 
-<br/>
-
-___
-
-<br/>
-
 **Mostrar el nombre de usuario y correo.**
 ```sh
 git config --list
 ```    
+
+<br/>
+
+---
 
 <br/>
 
@@ -68,12 +66,14 @@ git config --list
 git config --list --show-origin
 ```
 
-<br />  
-
 **Comandos para configuraciones.**
 ```sh
 git config
 ```
+
+<br/>
+
+---
 
 <br/>
 
@@ -89,15 +89,16 @@ o para agregar varios archivos al mismo tiempo.
 git add .
 ```
 
-<br/>
-
-
 **Cambia el estatus de agregado a cacheado, vuelve al estado inicial.**
 
 --cached significa que está en la memoria ram. Si me equivoco al hacer `add` me puedo regresar.
 ```sh
 git rm --cached archivo.txt
 ```
+
+<br/>
+
+---
 
 <br/>
 
@@ -112,6 +113,10 @@ git commit -m "Versión 1"
 
 <br/>
 
+---
+
+<br/>
+
 **Ver el estatus de la base de datos del control de versiones.**
 ```sh
 git status
@@ -119,10 +124,18 @@ git status
 
 <br/>
 
+---
+
+<br/>
+
 **Muestra los cambios históricos.**
 ```sh
 git show
 ```
+
+<br/>
+
+---
 
 <br/>
 
@@ -142,12 +155,20 @@ git log --stat
 
 <br/>
 
+---
+
+<br/>
+
 **Comparar dos modificaciones que se hicieron.**
 
 O solo poner `git diff` y hará la comparación en el tiempo del archivo.
 ```sh
 git diff  cadena-alfanumerica-nombre-del-commit cadena-alfanumerica-nombre-del-commit
 ```
+
+<br/>
+
+---
 
 <br/>
 
@@ -158,6 +179,10 @@ git push
 
 <br/>
 
+---
+
+<br/>
+
 **Traer archivo de un servidor remoto.**
 
 Por ejemplo: si alguién más hizo una actualización, entonces yo la puedo traer a mi computadora 
@@ -165,6 +190,10 @@ o si yo hago una actualización directa en github, también actualizo mi archivo
 ```sh
 git pull
 ```
+
+<br/>
+
+---
 
 <br/>
 
@@ -182,6 +211,10 @@ git checkout master archivo.txt
 
 <br/>
 
+---
+
+<br/>
+
 **Volver a una versión anterior, esto borra todo lo que hice antes, ¡Precaución!.**
 
 De esta forma todo vuelve a la versión anterior.
@@ -195,7 +228,7 @@ git reset cadena-alfanumerica-nombre-del-commit --soft
 
 <br/>
 
---- 
+---
 
 <br/>
 
@@ -242,4 +275,8 @@ git reset cadena-alfanumerica-nombre-del-commit --soft
 <br/>
 
 ---
+
+<br/>
+
+
 
