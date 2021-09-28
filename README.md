@@ -21,7 +21,7 @@ git
 
 ## Comandos de git. 
 
-<br/>*2
+<br/>  
 
 **Comenzar un repositorio.**  
 
@@ -30,7 +30,7 @@ En la terminal entro al directorio en el que quiero hacer el control de versione
 git init
 ```
 
-<br/>
+<br/>  
 
 **Poner mis datos de usuario.**
 
