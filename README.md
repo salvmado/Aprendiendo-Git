@@ -162,9 +162,6 @@ git log --stat
 git diff  cadena-alfanumerica-nombre-del-commit cadena-alfanumerica-nombre-del-commit
 ```
 O solo poner `git diff` y hará la comparación en el tiempo del archivo.
-```sh
-git diff 
-```
 
 <br/>
 
