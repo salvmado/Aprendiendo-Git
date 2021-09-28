@@ -98,7 +98,7 @@ La cadena alfanumerica que aparece es el nombre de una modificación (de un `com
 git log archivo.txt
 ```
 
-**Comparar dos modificaciones que se hicieron**
+**Comparar dos modificaciones que se hicieron.**
 
 O solo poner `git diff` y hará la comparación en el tiempo del archivo.
 ```sh
