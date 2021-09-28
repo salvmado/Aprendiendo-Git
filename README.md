@@ -90,9 +90,14 @@ git show
 
 **Muestra toda la historia de un archivo.**
 
-El número largo que aparece es el nombre de esa modificación.
+La cadena alfanumerica que aparece es el nombre de una modificación (de un `commit`).
 ```sh
 git log archivo.txt
+```
+
+**Comparar modificaciones que se hicieron**
+```sh
+git diff  cadena-alfanumerica-nombre-del-commit cadena-alfanumerica-nombre-del-commit
 ```
 
 **Guardar una actualización en el servidor remoto, por ejemplo en github.**
