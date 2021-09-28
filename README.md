@@ -121,6 +121,17 @@ git pull
 git checkout
 ```
 
+**Volver a una versión anterior, esto borra todo lo que hice antes, ¡Precaución!**
+
+De esta forma todo vuelve a la versión anterior.
+```sh 
+git reset cadena-alfanumerica-nombre-del-commit --hard
+```
+También vuelve a la versión anterior, pero si tenemos algo en staging ahí se sigue quedando, disponible para hacer el `commit`.
+```sh 
+git reset cadena-alfanumerica-nombre-del-commit --soft
+```
+
 --- 
 
 ##  Cómo subir un proyecto local a github.
