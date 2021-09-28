@@ -211,7 +211,7 @@ git pull
 
 **Regresar a cambios anteriores, sin borrar nada de historia.**
 
-**Lo correcto sería hacer** `checkout`, después hacer los cambios en el archivo, hacer `add` --> `commit` y con esto envío esa actualización a la rama principal, pero sin perder nada de historia.
+Hacer `checkout`, después hacer los cambios en el archivo, `add`, `commit` y con esto envío esa actualización a la rama principal, pero sin perder nada de historia.
 
 ```sh 
 git checkout cadena-alfanumerica-nombre-del-commit archivo.txt
