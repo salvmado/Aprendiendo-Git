@@ -86,12 +86,26 @@ o para agregar varios archivos al mismo tiempo.
 git add .
 ```
 
-**Cambia el estatus de agregado a cacheado, vuelve al estado inicial.**
+<br/>
+
+---
+
+<br/>
+
+**Elimina el archivo que está en staging y del repositorio local.**
 
 --cached significa que está en la memoria ram. Si me equivoco al hacer `add` me puedo regresar.
 ```sh
 git rm --cached archivo.txt
-```
+```  
+
+**Elimina los archivos de git y de mi disco duro, `**¡Precaución!**`.**
+
+Dicen los que saben: que se pueden recuperar los archivos, pero con comandos avanzados.
+```sh
+git rm --force archivo.txt
+```  
+
 
 <br/>
 
@@ -148,7 +162,7 @@ git log
 ```
 Se ven los cambios de una forma más completa.
 ```sh
-git log --stat
+git log --stat historia.txt
 ```
 
 <br/>
@@ -194,7 +208,7 @@ git pull
 
 <br/>
 
-**Regresar a cambios anteriores, sin borrar nada de historia.**
+**Regresar a cambios anteriores, sin borrar nada de historia. `**¡Precaución!**`**
 
 Elijo la versión y si hago `commit` de esta modificación **borraré todo lo que hice antes**.
 ```sh 
@@ -212,9 +226,9 @@ git checkout master archivo.txt
 
 <br/>
 
-**Volver a una versión anterior, esto borra todo lo que hice antes, ¡Precaución!.**
+**Volver a una versión anterior, esto borra todo lo que hice antes. `**¡Precaución!**`**
 
-De esta forma todo vuelve a la versión anterior.
+De esta forma todo vuelve a la versión anterior. Se borra todo y no hay vuelta atrás.
 ```sh 
 git reset cadena-alfanumerica-nombre-del-commit --hard
 ```
@@ -222,6 +236,11 @@ También vuelve a la versión anterior, pero si tenemos algo en staging ahí se 
 ```sh 
 git reset cadena-alfanumerica-nombre-del-commit --soft
 ```
+Con este comando sacamos archivos del staging, no borra nada.
+```sh 
+git reset HEAD
+```
+
 
 <br/>
 
