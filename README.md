@@ -12,10 +12,12 @@
 git --version
 ```
 
-**Para ver todos los comandos de git.**
+**Ver todos los comandos de git.**
 ```sh
 git
 ```
+
+---
 
 <br/>
 
@@ -92,20 +94,19 @@ git add .
 
 <br/>
 
+**Saco archivos del staging, no borra nada.**
+
+Y cuando lo necesite para hacer `commit` lo puedo agregar nuevamente con `add`
+```sh 
+git reset HEAD
+```
+
 **Elimina el archivo que está en staging y del repositorio local.**
 
---cached significa que está en la memoria ram. Si me equivoco al hacer `add` me puedo regresar.
+--cached significa que está en la memoria ram. Si me equivoco al hacer `add` me puedo regresar, el archivo quedará untracked.
 ```sh
 git rm --cached archivo.txt
 ```  
-
-**Elimina los archivos de git y de mi disco duro, `**¡Precaución!**`.**
-
-Dicen los que saben: que se pueden recuperar los archivos, pero con comandos avanzados.
-```sh
-git rm --force archivo.txt
-```  
-
 
 <br/>
 
@@ -208,17 +209,18 @@ git pull
 
 <br/>
 
-**Regresar a cambios anteriores, sin borrar nada de historia. `**¡Precaución!**`**
+**Regresar a cambios anteriores, sin borrar nada de historia.**
 
-Elijo la versión y si hago `commit` de esta modificación **borraré todo lo que hice antes**.
+**Lo correcto sería hacer** `checkout`, después hacer los cambios en el archivo, hacer `add` --> `commit` y con esto envío esa actualización a la rama principal, pero sin perder nada de historia.
+
 ```sh 
 git checkout cadena-alfanumerica-nombre-del-commit archivo.txt
 ```
-Si aún no he hecho `commit` puedo regresar a como estaba antes del `checkout`
+Modificación de archivo 
 ```sh 
-git checkout master archivo.txt
+git add .
+git commit -m "Mensaje"
 ```
-**Lo correcto sería hacer** `checkout`, después hacer los cambios en el archivo, hacer `add` --> `commit` y con esto envío esa actualización a la rama principal, pero sin perder nada de historia.
 
 <br/>
 
@@ -226,7 +228,27 @@ git checkout master archivo.txt
 
 <br/>
 
-**Volver a una versión anterior, esto borra todo lo que hice antes. `**¡Precaución!**`**
+`**¡Precaución!**`
+
+**Puedo regresar en la historia y revisar un `commit`.**
+
+Ojo: si después de este comando hago un `commit` de esta modificación **borraré todo lo que hice antes**.
+```sh 
+git checkout cadena-alfanumerica-nombre-del-commit archivo.txt
+```
+Si aún no he hecho `commit` puedo regresar a como estaba antes del `checkout`
+```sh 
+git checkout master archivo.txt
+```
+
+**Elimina los archivos de git y de mi disco duro.**
+
+Dicen los que saben: que se pueden recuperar los archivos, pero con comandos avanzados.
+```sh
+git rm --force archivo.txt
+```  
+
+**Volver a una versión anterior, esto borra todo lo que hice antes.**
 
 De esta forma todo vuelve a la versión anterior. Se borra todo y no hay vuelta atrás.
 ```sh 
@@ -236,11 +258,6 @@ También vuelve a la versión anterior, pero si tenemos algo en staging ahí se 
 ```sh 
 git reset cadena-alfanumerica-nombre-del-commit --soft
 ```
-Con este comando sacamos archivos del staging, no borra nada.
-```sh 
-git reset HEAD
-```
-
 
 <br/>
 
