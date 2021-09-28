@@ -38,12 +38,14 @@ git config --global user.name "Mi Nombre"
 ```
 ```sh
 git config --global user.email "micorreo@mail.com.mx"
-```
+```    
+
 
 **Mostrar el nombre de usuario y correo.**
 ```sh
 git config --list
-```
+```    
+
 
 **Mostrar archivos donde están las configuraciones guardadas.**
 ```sh
