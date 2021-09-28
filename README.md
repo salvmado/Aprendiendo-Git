@@ -125,12 +125,19 @@ o si yo hago una actualización directa en github, también actualizo mi archivo
 git pull
 ```
 
-**Traer cambios que yo quiera hacia mi carpeta local**
-```sh 
-git checkout
-```
+**Regresar a cambios anteriores, sin borrar nada de historia.**
 
-**Volver a una versión anterior, esto borra todo lo que hice antes, ¡Precaución!**
+Elijo la versión y si hago `commit` de esta modificación **borraré todo lo que hice antes**.
+```sh 
+git checkout cadena-alfanumerica-nombre-del-commit archivo.txt
+```
+Y con esto regreso a como estaba antes del `checkout`
+```sh 
+git checkout master archivo.txt
+```
+Lo correcto sería hacer `checkout`, después hacer un cambio, hacer `add` --> `commit` y con esto envío esos cambios a la rama principal. 
+
+**Volver a una versión anterior, esto borra todo lo que hice antes, ¡Precaución!.**
 
 De esta forma todo vuelve a la versión anterior.
 ```sh 
