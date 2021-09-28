@@ -56,6 +56,7 @@ git config
 **Poner archivos en Staging.** 
 
 Es como agregar archivos y prepararlos para después hacer `commit`.
+Antes de hacer `add` es untracked y con `add` ya es tracked
 ```sh
 git add archivo.txt
 ```
