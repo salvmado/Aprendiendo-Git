@@ -21,9 +21,6 @@ git
 
 <br/>  
 
----
-
-<br/>
 
 **Comenzar un repositorio.**  
 
@@ -159,9 +156,12 @@ git log --stat
 
 **Comparar dos modificaciones que se hicieron.**
 
-O solo poner `git diff` y hará la comparación en el tiempo del archivo.
 ```sh
 git diff  cadena-alfanumerica-nombre-del-commit cadena-alfanumerica-nombre-del-commit
+```
+O solo poner `git diff` y hará la comparación en el tiempo del archivo.
+```sh
+git diff 
 ```
 
 <br/>
