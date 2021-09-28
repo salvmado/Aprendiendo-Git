@@ -131,11 +131,11 @@ Elijo la versión y si hago `commit` de esta modificación **borraré todo lo qu
 ```sh 
 git checkout cadena-alfanumerica-nombre-del-commit archivo.txt
 ```
-Y con esto regreso a como estaba antes del `checkout`
+Si aún no he hecho `commit` puedo regresar a como estaba antes del `checkout`
 ```sh 
 git checkout master archivo.txt
 ```
-Lo correcto sería hacer `checkout`, después hacer un cambio, hacer `add` --> `commit` y con esto envío esos cambios a la rama principal. 
+**Lo correcto sería hacer** `checkout`, después hacer un cambio, hacer `add` --> `commit` y con esto envío esos cambios a la rama principal, pero sin perder nada de historia.
 
 **Volver a una versión anterior, esto borra todo lo que hice antes, ¡Precaución!.**
 
