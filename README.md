@@ -19,15 +19,17 @@ git
 
 ---
 
-## Comandos de git.  
-___
+## Comandos de git. 
+<br />
+
 **Comenzar un repositorio.**
 
 En la terminal entro al directorio en el que quiero hacer el control de versiones y pongo este comando.
 ```sh
 git init
 ```
-___
+<br />
+
 **Poner mis datos de usuario.**
 
 Es para que otras personas sepan quien hizo el cambio.
