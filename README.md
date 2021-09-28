@@ -135,7 +135,7 @@ Si aún no he hecho `commit` puedo regresar a como estaba antes del `checkout`
 ```sh 
 git checkout master archivo.txt
 ```
-**Lo correcto sería hacer** `checkout`, después hacer un cambio, hacer `add` --> `commit` y con esto envío esos cambios a la rama principal, pero sin perder nada de historia.
+**Lo correcto sería hacer** `checkout`, después hacer los cambios en el archivo, hacer `add` --> `commit` y con esto envío esa actualización a la rama principal, pero sin perder nada de historia.
 
 **Volver a una versión anterior, esto borra todo lo que hice antes, ¡Precaución!.**
 
