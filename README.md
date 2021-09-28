@@ -95,7 +95,7 @@ La cadena alfanumerica que aparece es el nombre de una modificación (de un `com
 git log archivo.txt
 ```
 
-**Comparar modificaciones que se hicieron**
+**Comparar dos modificaciones que se hicieron**
 ```sh
 git diff  cadena-alfanumerica-nombre-del-commit cadena-alfanumerica-nombre-del-commit
 ```
