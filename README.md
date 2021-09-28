@@ -75,6 +75,8 @@ git rm --cached archivo.txt
 **Envía los cambios del archivo a la base de datos del control de versiones (repositorio).**
 
 El mensaje entre comillas es para hacer un comentario corto del cambio que se hizo.
+
+Cada `commit` es una versión diferente de mi archivo.
 ```sh
 git commit -m "Versión 1"
 ```
@@ -112,6 +114,11 @@ Por ejemplo: si alguién más hizo una actualización, entonces yo la puedo trae
 o si yo hago una actualización directa en github, también actualizo mi archivo local con este comando:
 ```sh
 git pull
+```
+
+**Traer cambios que yo quiera hacia mi carpeta local**
+```sh 
+git checkout
 ```
 
 --- 
