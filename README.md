@@ -55,8 +55,9 @@ git config --list
 ```sh
 git config --list --show-origin
 ```
-<br/>
-<br/>
+
+<br />  
+
 **Comandos para configuraciones.**
 ```sh
 git config
