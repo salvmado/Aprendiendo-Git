@@ -97,6 +97,13 @@ La cadena alfanumerica que aparece es el nombre de una modificación (de un `com
 ```sh
 git log archivo.txt
 ```
+```sh
+git log
+```
+Se ven los cambios de una forma más completa.
+```sh
+git log --stat
+```
 
 **Comparar dos modificaciones que se hicieron.**
 
