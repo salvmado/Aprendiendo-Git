@@ -53,7 +53,7 @@ git config --list --show-origin
 git config
 ```
 
-**Poner archivos en Stage.** 
+**Poner archivos en Staging.** 
 
 Es como agregar archivos y prepararlos para después hacer `commit`.
 ```sh
