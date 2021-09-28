@@ -138,7 +138,8 @@ git show
 
 **Muestra toda la historia de un archivo.**
 
-La cadena alfanumerica que aparece es el nombre de una modificación (de un `commit`).
+La cadena alfanumerica que aparece es el nombre de una modificación (de un `commit`). 
+También aparece autor y fecha exacta.
 ```sh
 git log archivo.txt
 ```
@@ -161,7 +162,6 @@ git log --stat
 ```sh
 git diff  cadena-alfanumerica-nombre-del-commit cadena-alfanumerica-nombre-del-commit
 ```
-O solo poner `git diff` y hará la comparación en el tiempo del archivo.
 
 <br/>
 
