@@ -20,16 +20,20 @@ git
 ---
 
 ## Comandos de git. 
+
 <br/>
 <br/>
+
 **Comenzar un repositorio.**  
 
 En la terminal entro al directorio en el que quiero hacer el control de versiones y pongo este comando.
 ```sh
 git init
 ```
+
 <br/>
 <br/>
+
 **Poner mis datos de usuario.**
 
 Es para que otras personas sepan quien hizo el cambio.
@@ -39,14 +43,18 @@ git config --global user.name "Mi Nombre"
 ```sh
 git config --global user.email "micorreo@mail.com.mx"
 ```    
+
 <br/>
 <br/>
+
 **Mostrar el nombre de usuario y correo.**
 ```sh
 git config --list
 ```    
+
 <br/>
 <br/>
+
 **Mostrar archivos donde están las configuraciones guardadas.**
 ```sh
 git config --list --show-origin
