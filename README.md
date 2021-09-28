@@ -39,7 +39,7 @@ git init
 
 **Poner mis datos de usuario.**
 
-Es para que otras personas vean quien hizo el cambio.
+Es para que otras personas vean quien hizo el cambio en el repositorio.
 ```sh
 git config --global user.name "Mi Nombre"
 ```
