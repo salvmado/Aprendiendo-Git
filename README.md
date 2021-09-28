@@ -1,6 +1,5 @@
 # Git básico.
 
----
 
 ## Instalación de git en debian.
 ```sh
@@ -17,7 +16,6 @@ git --version
 git
 ```
 
----
 
 ## Comandos de git. 
 
