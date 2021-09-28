@@ -22,7 +22,10 @@ git
 ## Comandos de git. 
 
 <br/>  
+
 ___
+
+<br/>
 
 **Comenzar un repositorio.**  
 
@@ -32,7 +35,10 @@ git init
 ```
 
 <br/>  
+
 ___
+
+<br/>
 
 **Poner mis datos de usuario.**
 
@@ -45,7 +51,10 @@ git config --global user.email "micorreo@mail.com.mx"
 ```    
 
 <br/>
+
 ___
+
+<br/>
 
 **Mostrar el nombre de usuario y correo.**
 ```sh
