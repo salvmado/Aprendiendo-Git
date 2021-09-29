@@ -314,9 +314,15 @@ git reset cadena-alfanumerica-es-el-nombre-del-commit --hard
 
 <br/>
 
-| Mi directorio | Preparación | Repositorio local | Repositorio remoto |
-| ------------- | ------------| ----------------- | ------------------ |
-| `Desarrollo`  | `git add`   | `git commit`      | `git push` / `git pull` |
+**Lo básico lo entiendo así**
+| Mi directorio | Preparación o staging | Repositorio local | Repositorio remoto |
+| ------------- | ----------------------| ----------------- | ------------------ |
+| `Desarrollo`  | `git add`             | `git commit`      | `git push`         |
+
+Y s quiero traer actualizaciones de un repositorio remoto
+| Mi directorio | Preparación o staging | Repositorio local | Repositorio remoto |
+| ------------- | ----------------------| ----------------- | ------------------ |
+| `Desarrollo`  |                       | `git pull`        |                    |
 
 <br/>
 
