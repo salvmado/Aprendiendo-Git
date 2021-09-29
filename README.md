@@ -314,5 +314,13 @@ git reset cadena-alfanumerica-es-el-nombre-del-commit --hard
 
 <br/>
 
+| Mi directorio | Preparación | Repositorio local | Repositorio remoto |
+| ------------- | ------------| ----------------- | ------------------ |
+| `Desarrollo`  | `git add`   | `git commit`      | `git push` / `git pull` |
 
+<br/>
+
+---
+
+<br/>
 
