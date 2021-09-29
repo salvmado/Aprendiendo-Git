@@ -7,7 +7,7 @@
 :~# apt install git
 ```
 
-**Para saber la versión que tengo instalada.**
+**Ver la versión que tengo instalada.**
 ```sh
 git --version
 ```
@@ -81,7 +81,7 @@ git config
 Es como agregar archivos y prepararlos para después hacer `commit`.
 Antes de hacer `add` es untracked y con `add` ya es tracked
 ```sh
-git add archivo.txt
+git add <archivo>
 ```
 o para agregar varios archivos al mismo tiempo.
 ```sh
@@ -105,7 +105,7 @@ git reset HEAD
 
 --cached significa que está en la memoria ram. Si me equivoco al hacer `add` me puedo regresar, el archivo quedará untracked.
 ```sh
-git rm --cached archivo.txt
+git rm --cached <archivo>
 ```  
 
 <br/>
@@ -156,7 +156,7 @@ git show
 La cadena alfanumerica que aparece es el nombre de una modificación (de un `commit`). 
 También aparece autor y fecha exacta.
 ```sh
-git log archivo.txt
+git log <archivo>
 ```
 ```sh
 git log
@@ -175,7 +175,7 @@ git log --stat historia.txt
 **Comparar dos modificaciones que se hicieron.**
 
 ```sh
-git diff  cadena-alfanumerica-nombre-del-commit cadena-alfanumerica-nombre-del-commit
+git diff  cadena-alfanumerica-es-el-nombre-del-commit cadena-alfanumerica-es-el-nombre-del-commit
 ```
 
 <br/>
@@ -209,17 +209,22 @@ git pull
 
 <br/>
 
-**Regresar a cambios anteriores, sin borrar nada de historia.**
-
-Hacer `checkout`, después hacer los cambios en el archivo, `add`, `commit` y con esto envío esa actualización a la rama principal, pero sin perder nada de historia.
-
+**Puedo regresar en la historia y revisar un `commit`.**
 ```sh 
-git checkout cadena-alfanumerica-nombre-del-commit archivo.txt
+git checkout cadena-alfanumerica-es-el-nombre-del-commit <archivo>
 ```
-Modificación de archivo 
+Y ya que lo revisé, regreso a mi versión actual con:
 ```sh 
-git add .
-git commit -m "Mensaje"
+git checkout master <archivo>
+```
+
+**Regresar a cambios anteriores, sin borrar nada de historia en git.**
+```sh 
+git checkout cadena-alfanumerica-es-el-nombre-del-commit <archivo>
+```
+El `checkout` deja en staging el archivo, solo tengo que hacer `commit` para traerlo de nuevo.  
+```sh 
+git commit -m "Regreso a la versión anterior"
 ```
 
 <br/>
@@ -230,34 +235,32 @@ git commit -m "Mensaje"
 
 `**¡Precaución!**`
 
-**Puedo regresar en la historia y revisar un `commit`.**
+**Volver a una versión anterior, pero puedo borrar todo lo que hice antes.**
 
-Ojo: si después de este comando hago un `commit` de esta modificación **borraré todo lo que hice antes**.
+Vuelve a la versión anterior que yo quiera y deja en staging el contenido actual, solo tengo que hacer `commit` para actualizarlo. Lo malo es que borra la historia en git.
 ```sh 
-git checkout cadena-alfanumerica-nombre-del-commit archivo.txt
+git reset cadena-alfanumerica-es-el-nombre-del-commit --soft
 ```
-Si aún no he hecho `commit` puedo regresar a como estaba antes del `checkout`
+
+De esta forma todo vuelve a la versión anterior que yo quiera, pero borra todo y no hay vuelta atrás.
 ```sh 
-git checkout master archivo.txt
+git reset cadena-alfanumerica-es-el-nombre-del-commit --hard
 ```
 
 **Elimina los archivos de git y de mi disco duro.**
 
 Dicen los que saben: que se pueden recuperar los archivos, pero con comandos avanzados.
 ```sh
-git rm --force archivo.txt
+git rm --force <archivo>
+``` 
+Yo lo intenté y sí se borra, pero le doy `git status` y parece que el archivo está en staging. lo que hice es usar 
+```sh 
+git restore --staged <archivo>
+```
+Ahora creo un archivo nuevo con el mismo nombre al que borre, reviso el `git log` y regreso en la versión que yo quiera con este comando:
+```sh 
+git reset cadena-alfanumerica-es-el-nombre-del-commit --hard
 ```  
-
-**Volver a una versión anterior, esto borra todo lo que hice antes.**
-
-De esta forma todo vuelve a la versión anterior. Se borra todo y no hay vuelta atrás.
-```sh 
-git reset cadena-alfanumerica-nombre-del-commit --hard
-```
-También vuelve a la versión anterior, pero si tenemos algo en staging ahí se sigue quedando, disponible para hacer el `commit`.
-```sh 
-git reset cadena-alfanumerica-nombre-del-commit --soft
-```
 
 <br/>
 
