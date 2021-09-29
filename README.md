@@ -114,7 +114,7 @@ git rm --cached <archivo>
 
 <br/>
 
-**Envía los cambios del archivo a la base de datos del control de versiones (repositorio).**
+**Envía los cambios del archivo a la base de datos del control de versiones (repositorio local).**
 
 El mensaje entre comillas es para hacer un comentario corto del cambio que se hizo.
 
@@ -184,7 +184,7 @@ git diff  cadena-alfanumerica-es-el-nombre-del-commit cadena-alfanumerica-es-el-
 
 <br/>
 
-**Guardar una actualización en el servidor remoto, por ejemplo en github.**
+**Guardar una actualización en el repositorio remoto, por ejemplo en github.**
 ```sh
 git push
 ```
@@ -195,7 +195,7 @@ git push
 
 <br/>
 
-**Traer archivo de un servidor remoto.**
+**Traer archivo de un repositorio remoto.**
 
 Por ejemplo: si alguién más hizo una actualización, entonces yo la puedo traer a mi computadora 
 o si yo hago una actualización directa en github, también actualizo mi archivo local con este comando:
