@@ -163,7 +163,7 @@ git log
 ```
 Se ven los cambios de una forma más completa.
 ```sh
-git log --stat historia.txt
+git log --stat <archivo>
 ```
 
 <br/>
