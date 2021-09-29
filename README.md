@@ -314,12 +314,14 @@ git reset cadena-alfanumerica-es-el-nombre-del-commit --hard
 
 <br/>
 
-**Lo básico lo entiendo así**
+**Lo básico lo entiendo así:**
+
+Para guardar en mi repositorio local y remoto.
 | Mi directorio | Preparación o staging | Repositorio local | Repositorio remoto |
 | ------------- | ----------------------| ----------------- | ------------------ |
 | `Desarrollo`  | `git add`             | `git commit`      | `git push`         |
 
-Y s quiero traer actualizaciones de un repositorio remoto
+Y si quiero traer actualizaciones de un repositorio remoto.
 | Mi directorio | Preparación o staging | Repositorio local | Repositorio remoto |
 | ------------- | ----------------------| ----------------- | ------------------ |
 | `Desarrollo`  |                       | `git pull`        |                    |
