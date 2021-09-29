@@ -296,9 +296,7 @@ git reset cadena-alfanumerica-es-el-nombre-del-commit --hard
 
 **En Github**
 
-- Tener asociada mi key SSH publica.
-
-- Crear un repositorio.
+- Tener asociada mi key SSH publica, para después poder hacer cambios.
 
 **En mi máquina local**
 
