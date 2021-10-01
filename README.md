@@ -253,18 +253,18 @@ git reset cadena-alfanumerica-es-el-nombre-del-commit --hard
 
 **Elimina los archivos de git y de mi disco duro.**
 
-Dicen los que saben: que se pueden recuperar los archivos, pero con comandos avanzados.
 ```sh
 git rm --force <archivo>
 ``` 
-Yo lo intenté y sí se borra, pero le doy `git status` y parece que el archivo está en staging. lo que hice es usar 
+Intenté recuperar el archivo borrado. reviso con `git status` y parece que el archivo está en staging, lo que hice es crear un archivo con el mismo nombre que borré y después usé este comando:
 ```sh 
 git restore --staged <archivo>
 ```
-Ahora creo un archivo nuevo con el mismo nombre al que borre, reviso el `git log` y regreso en la versión que yo quiera con este comando:
+Reviso el `git log` y regreso en la última versión con este comando. 
 ```sh 
 git reset cadena-alfanumerica-es-el-nombre-del-commit --hard
-```  
+```
+Checo el `log` y sigo teniedo toda mi historia de git, aparte el archivo está con todos mis datos.
 
 <br/>
 
@@ -321,12 +321,12 @@ git reset cadena-alfanumerica-es-el-nombre-del-commit --hard
 Para guardar en mi repositorio local y remoto.
 | Mi directorio | Preparación o staging | Repositorio local | Repositorio remoto |
 | ------------- | ----------------------| ----------------- | ------------------ |
-| `Desarrollo`  | `git add`             | `git commit`      | `git push`         |
+| `Desarrollo` --> | `git add` --> | `git commit` --> | `git push` |
 
 Y si quiero traer actualizaciones de un repositorio remoto.
 | Mi directorio | Preparación o staging | Repositorio local | Repositorio remoto |
 | ------------- | ----------------------| ----------------- | ------------------ |
-| `Desarrollo`  |                       | `git pull`        |                    |
+| `Desarrollo` --> |                    | `git pull`        |                    |
 
 <br/>
 
