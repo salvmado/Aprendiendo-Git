@@ -122,6 +122,10 @@ Cada `commit` es una versión diferente de mi archivo.
 ```sh
 git commit -m "Versión 1"
 ```
+Una vez que hice `add` una vez, la proxima lo puedo omitir y hacer directamente el `commit` con el flag `-a`.
+```sh
+git commit -am "Versión 1"
+```
 
 <br/>
 
