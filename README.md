@@ -342,10 +342,24 @@ Y si quiero traer actualizaciones de un repositorio remoto.
 ```sh 
 git  branch <nombre-rama>
 ``` 
-Cuando escribo el comando `git status` me doy cuenta de que el último `commit` es el `HEAD` de la rama master.
+Cuando escribo el comando `git status` me doy cuenta de que el `HEAD` es el último `commit` de la rama master.
 
 Ahora tengo que moverme a la nueva rama y para regresar es con el mismo comando solo cambiaré a master.
 ```sh 
 git  checkout <nombre-rama>
 ``` 
-`git status` y me doy cuenta de que el `HEAD` ya está en `<nombre-rama>`. Ahora ya puedo hacer cambios en mi nueva rama.
+`git status` y me doy cuenta de que el `HEAD` ya está en `<nombre-rama>`. 
+
+Ahora ya puedo hacer cambios, pero tengo que hacer `commit` antes de cambiar de rama, si no lo hago se perdería todo el avance.
+
+**Cómo saber cuantas ramas tengo, su nombre y en cual estoy situado.**
+```sh 
+git  branch
+``` 
+**Unir la rama creada a la principal**
+
+Tengo que estar en la rama que quiero que sea la principal, por ejemplo la master.
+```sh 
+git  merge <nombre-rama>
+``` 
+Y con esto los cambios hechos en `<nombre-rama>` ya estarán unidos a la master. Si quiero podré desaserme de la rama y hacer otra para más cambios futuros.
