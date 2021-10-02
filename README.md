@@ -334,3 +334,18 @@ Y si quiero traer actualizaciones de un repositorio remoto.
 
 <br/>
 
+
+## Trabajando con ramas.
+
+**Cómo creo una nueva rama**
+
+```sh 
+git  branch <nombre-rama>
+``` 
+Cuando escribo el comando `git status` me doy cuenta de que el último `commit` es el `HEAD` de la rama master.
+
+Ahora tengo que movemre a la nueva rama y para regresar es con el mismo comando solo cambiaré a master.
+```sh 
+git  checkout <nombre-rama>
+``` 
+`git status` y me doy cuenta de que el `HEAD` ya está en `<nombre-rama>`. Ahora ya puedo hacer cambios en mi nueva rama.
