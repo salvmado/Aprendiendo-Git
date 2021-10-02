@@ -21,7 +21,7 @@ git
 
 <br/>
 
-## Comandos de git. 
+## Comandos básicos de git. 
 
 <br/>  
 
