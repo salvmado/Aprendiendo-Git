@@ -122,7 +122,7 @@ Cada `commit` es una versión diferente de mi archivo.
 ```sh
 git commit -m "Versión 1"
 ```
-Una vez que hice `add` una vez, la proxima lo puedo omitir y hacer directamente el `commit` con el flag `-a`.
+Una vez que hice `add` una vez, la próxima lo puedo omitir y hacer directamente el `commit` con el flag `-a`.
 ```sh
 git commit -am "Versión 1"
 ```
@@ -157,7 +157,7 @@ git show
 
 **Muestra toda la historia de un archivo.**
 
-La cadena alfanumerica que aparece es el nombre de una modificación (de un `commit`). 
+La cadena alfanumérica que aparece es el nombre de una modificación (de un `commit`). 
 También aparece autor y fecha exacta.
 ```sh
 git log <archivo>
@@ -179,7 +179,7 @@ git log --stat <archivo>
 **Comparar dos modificaciones que se hicieron.**
 
 ```sh
-git diff  cadena-alfanumerica-es-el-nombre-del-commit cadena-alfanumerica-es-el-nombre-del-commit
+git diff  cadena-alfanumérica-es-el-nombre-del-commit cadena-alfanumérica-es-el-nombre-del-commit
 ```
 
 <br/>
@@ -188,7 +188,7 @@ git diff  cadena-alfanumerica-es-el-nombre-del-commit cadena-alfanumerica-es-el-
 
 <br/>
 
-**Guardar una actualización en el repositorio remoto, por ejemplo en github.**
+**Guardar una actualización en el repositorio remoto, por ejemplo, en github.**
 ```sh
 git push
 ```
@@ -201,7 +201,7 @@ git push
 
 **Traer archivo de un repositorio remoto.**
 
-Por ejemplo: si alguién más hizo una actualización, entonces yo la puedo traer a mi computadora 
+por ejemplo: si alguien más hizo una actualización, entonces yo la puedo traer a mi computadora 
 o si yo hago una actualización directa en github, también actualizo mi archivo local con este comando:
 ```sh
 git pull
@@ -215,7 +215,7 @@ git pull
 
 **Puedo regresar en la historia y revisar un `commit`.**
 ```sh 
-git checkout cadena-alfanumerica-es-el-nombre-del-commit <archivo>
+git checkout cadena-alfanumérica-es-el-nombre-del-commit <archivo>
 ```
 Y ya que lo revisé, regreso a mi versión actual con:
 ```sh 
@@ -224,7 +224,7 @@ git checkout master <archivo>
 
 **Regresar a cambios anteriores, sin borrar nada de historia en git.**
 ```sh 
-git checkout cadena-alfanumerica-es-el-nombre-del-commit <archivo>
+git checkout cadena-alfanumérica-es-el-nombre-del-commit <archivo>
 ```
 El `checkout` deja en staging el archivo, solo tengo que hacer `commit` para traerlo de nuevo.  
 ```sh 
@@ -243,12 +243,12 @@ git commit -m "Regreso a la versión anterior"
 
 Vuelve a la versión anterior que yo quiera y deja en staging el contenido actual, solo tengo que hacer `commit` para actualizarlo. Lo malo es que borra la historia en git.
 ```sh 
-git reset cadena-alfanumerica-es-el-nombre-del-commit --soft
+git reset cadena-alfanumérica-es-el-nombre-del-commit --soft
 ```
 
 De esta forma todo vuelve a la versión anterior que yo quiera, pero borra todo y no hay vuelta atrás.
 ```sh 
-git reset cadena-alfanumerica-es-el-nombre-del-commit --hard
+git reset cadena-alfanumérica-es-el-nombre-del-commit --hard
 ```
 
 **Elimina los archivos de git y de mi disco duro.**
@@ -262,9 +262,9 @@ git restore --staged <archivo>
 ```
 Reviso el `git log` y regreso en la última versión con este comando. 
 ```sh 
-git reset cadena-alfanumerica-es-el-nombre-del-commit --hard
+git reset cadena-alfanumérica-es-el-nombre-del-commit --hard
 ```
-Checo el `log` y sigo teniedo toda mi historia de git, aparte el archivo está con todos mis datos.
+Checo el `log` y sigo teniendo toda mi historia de git, aparte el archivo está con todos mis datos.
 
 <br/>
 
@@ -344,22 +344,22 @@ git  branch <nombre-rama>
 ``` 
 Cuando escribo el comando `git status` me doy cuenta de que el `HEAD` es el último `commit` de la rama master.
 
-Ahora tengo que moverme a la nueva rama y para regresar es con el mismo comando solo cambiaré a master.
+Ahora tengo que moverme a la nueva rama y para regresar es con el mismo comando, solo cambiaré a master.
 ```sh 
 git  checkout <nombre-rama>
 ``` 
-`git status` y me doy cuenta de que el `HEAD` ya está en `<nombre-rama>`. 
+`git status` y ahora el `HEAD` ya está en `<nombre-rama>`. 
 
-Ahora ya puedo hacer cambios, pero tengo que hacer `commit` antes de cambiar de rama, si no lo hago se perdería todo el avance.
+Ya puedo hacer cambios, pero tengo que hacer `commit` antes de cambiar de rama, si no lo hago se perdería todo el avance.
 
-**Cómo saber cuantas ramas tengo, su nombre y en cual estoy situado.**
+**Cómo saber cuántas ramas tengo, su nombre y en cuál estoy situado.**
 ```sh 
 git  branch
 ``` 
 **Unir la rama creada a la principal**
 
-Tengo que estar en la rama que quiero que sea la principal, por ejemplo la master.
+Tengo que estar en la rama que quiero que sea la principal, por ejemplo, la master.
 ```sh 
 git  merge <nombre-rama>
 ``` 
-Y con esto los cambios hechos en `<nombre-rama>` ya estarán unidos a la master. Si quiero podré desaserme de la rama y hacer otra para más cambios futuros.
+Y con esto los cambios hechos en `<nombre-rama>` ya estarán unidos a la master. Si quiero podré deshacerme de la rama y hacer otra para más cambios futuros.
